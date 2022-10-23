@@ -1,0 +1,10 @@
+file = input()
+f=open(file, 'r')
+str1=input()
+str2=input()
+in_file= f.readlines()
+for word in in_file:
+    word=word.strip()
+    if str1<=word<=str2:
+        print(word)
+f.close()
